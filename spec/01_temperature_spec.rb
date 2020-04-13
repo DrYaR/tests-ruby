@@ -1,11 +1,15 @@
 require_relative '../lib/01_temperature'
 
 describe "temperature conversion functions" do
-
+#grande fonction
   describe "#ftoc" do
-
+#sous fonction  le "#" == ?sorte de tag mot cle? (far to cel)
     it "converts freezing temperature" do
       expect(ftoc(32)).to eq(0)
+      # appel a la fonction ftoc et la valeur que t'as donne
+      # expect == comparaison // .to eq == la valeur qu'on te donne
+      # si ftoc(32) == 0 then >>>>test valide
+      # si ftoc(32) != 0 then >>>>pas content
     end
 
     it "converts boiling temperature" do

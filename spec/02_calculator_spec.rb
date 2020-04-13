@@ -3,6 +3,7 @@ require_relative '../lib/02_calculator'
 describe "add" do
   it "adds 0 and 0" do
     expect(add(0,0)).to eq(0)
+    # add(0,0) == attend deux valeurs. 
   end
 
   it "adds 2 and 2" do
@@ -56,14 +57,12 @@ describe "#multiply" do
 end
 
 describe "#power" do
-  it "raises one number to the power of another number"
+  it "power two numbers" do
+    expect(power(2, 3)).to eq(8)
+  end
 end
 
 # http://en.wikipedia.org/wiki/Factorial
 describe "#factorial" do
-  it "computes the factorial of 0"
-  it "computes the factorial of 1"
-  it "computes the factorial of 2"
-  it "computes the factorial of 5"
-  it "computes the factorial of 10"
+
 end
